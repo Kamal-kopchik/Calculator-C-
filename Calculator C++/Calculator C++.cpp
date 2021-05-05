@@ -27,6 +27,7 @@ public:
 			}
 			else {
 				throw Exception();
+				exit(1);
 			}
 		}
 
@@ -59,7 +60,7 @@ int main() {
 		} while (flag);
 	}
 	catch (Calculator<int>::Exception) {
-		cout << "Error!" << endl;
+		cout << "Error! The number cannot be divisible by 0" << endl;
 	}
 	return 0;
 }
